@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
-function Header(props) {
+function Header() {
   return (
     <div>
 
@@ -14,13 +14,13 @@ function Header(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">{props.link1}</Link>
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/signin">{props.link2}</Link>
+                <Link className="nav-link" to="/signin">SignIn</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/signup">{props.link3}</Link>
+                <Link className="nav-link" to="/signup">SignUp</Link>
               </li>
               
             </ul>
