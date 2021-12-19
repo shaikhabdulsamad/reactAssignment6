@@ -1,17 +1,19 @@
 import {BrowserRouter as Router, Route } from "react-router-dom";
 import Home from '../containers/Home';
-import Signin from '../containers/Sign_in';
-import Signup from '../containers/Sign_up';
-import Profile from '../containers/Profile'
+import Request from '../containers/Request';
+import BranchManager from '../containers/BranchManager';
+
 
 function AppRouter(){
     return(
         <Router>
           
         <Route exact path="/" component={Home} /> 
-        <Route path="/signin" component={Signin} /> 
+        <Route exact path="/Request" component={Request} /> 
+        <Route exact path="/BranchManager" component={BranchManager} /> 
+        {/* <Route path="/signin" component={Signin} /> 
         <Route path="/signup" component={Signup} /> 
-        <Route path="/profile" component={Profile} /> 
+        <Route path="/profile" component={Profile} />  */}
     
         </Router>
     )
